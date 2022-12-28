@@ -1,8 +1,8 @@
 .btn {
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   background: $yellow;
-  border-radius: 100px;
-  width: 156px;
+  border-radius: rem(100px);
+  width: rem(156px);
   text-transform: uppercase;
   font-weight: 800;
   border: none;
@@ -26,12 +26,17 @@
 .title {
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: rem(48px);
+  line-height: rem(58px);
   color: $black;
   text-transform: uppercase;
 
   &--white {
     color: #fff;
+  }
+
+  @include phones {
+    font-size: rem(40px);
+    line-height: rem(36px);
   }
 }

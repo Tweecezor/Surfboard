@@ -2,26 +2,37 @@
   &__desc {
     color: $grey;
     padding: 0 17%;
+
+    @include phones {
+      padding: 0;
+    }
   }
   &__title {
     &-wrap {
-      margin-bottom: 17px;
+      margin-bottom: rem(17px);
+    }
+    @include phones {
+      margin-bottom: rem(10px);
     }
   }
 
   &__benefits {
     display: flex;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__headline {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: rem(50px);
   }
 }
 
 .benefits__item {
-  padding: 0 3%;
+  padding: 0 1%;
 
   &:last-child {
     padding-right: 0;
@@ -41,7 +52,7 @@
   &:after {
     content: url("../../images/icons/shapes.svg");
     position: absolute;
-    top: 60px;
+    top: rem(60px);
     right: 0;
     transform: translateX(50%);
   }
@@ -52,22 +63,38 @@
     }
   }
 
+  @include tablets {
+    &:after {
+      display: none;
+    }
+  }
+
+  @include phones {
+    flex-direction: row;
+    align-items: inherit;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   &__icon {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
+    width: rem(60px);
+    height: rem(60px);
 
     &-wrap {
       display: inline-block;
-      width: 128px;
-      height: 128px;
+      width: rem(128px);
+      height: rem(128px);
       border-radius: 50%;
       background: #f2f5f4;
       position: relative;
-      margin-bottom: 20px;
+      margin-bottom: rem(20px);
       overflow: hidden;
     }
   }
@@ -75,9 +102,9 @@
   &__title {
     color: $black;
     font-weight: 700;
-    font-size: 27px;
-    line-height: 32px;
-    margin-bottom: 20px;
+    font-size: rem(27px);
+    line-height: rem(32px);
+    margin-bottom: rem(20px);
   }
 
   &__desc {

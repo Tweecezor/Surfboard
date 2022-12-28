@@ -1,11 +1,18 @@
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+//
+
 //colors
 $black: #292929;
 $grey: #666666;
 $yellow: #fedb3f;
 $yellow_hover: #ffd517;
+
+//media query
+$tablets: 768px;
+$phones: 480px;
+@import "./css/media.scss";
 
 //normalize
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
@@ -24,3 +31,4 @@ $yellow_hover: #ffd517;
 @import "./css/components/reviews.scss";
 @import "./css/components/delivery.scss";
 @import "./css/components/fixed-menu.scss";
+@import "./css/components/contacts.scss";
