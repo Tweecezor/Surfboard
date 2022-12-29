@@ -19,8 +19,32 @@
     width: rem(56px);
     height: rem(40px);
   }
+
+  &__burger {
+    display: none;
+
+    @include tablets {
+      display: block;
+    }
+  }
 }
 
+.burger {
+  &:hover {
+    cursor: pointer;
+  }
+  &__item {
+    width: 20px;
+    height: 4px;
+    border-radius: 10px;
+    background: white;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
 .menu {
   display: flex;
 

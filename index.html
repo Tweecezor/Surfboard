@@ -53,6 +53,12 @@
                   >8 800 903 90 90</a
                 >
               </div>
+
+              <div class="header__burger burger">
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+                <div class="burger__item"></div>
+              </div>
             </header>
             <div class="welcome__content">
               <div class="welcome__title-wrap">
@@ -156,6 +162,119 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </section>
+
+        <section class="slider">
+          <div class="container slider__container section">
+            <div class="slider__arrow slider__arrow--left">
+              <svg class="slider__arrow--icon">
+                <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="slider__list-wrap">
+              <ul class="slider__list">
+                <li class="slider__item slide">
+                  <div class="slide__img-wrap">
+                    <img
+                      src="./images/board-1.png"
+                      alt="Логбоард 2.0"
+                      class="slide_img"
+                    />
+                  </div>
+                  <div class="slide__content">
+                    <div class="slide__params">
+                      <div class="slide__params_img-wrap">
+                        <svg class="slide__params_img">
+                          <use
+                            xlink:href="./images/icons/sprite.svg#kompas"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="slide__params_text">Параметры</div>
+                    </div>
+                    <div class="slide__title-wrap">
+                      <h2 class="slide__title title title--small">
+                        Лонгбоард 2.0
+                      </h2>
+                    </div>
+                    <div class="slide__desc">
+                      Устойчивая доска для новичков. На них легко лежать,
+                      сидеть, грести, разгребаться на волны и ехать. Размер и
+                      плавучесть доски позволяет брать очень маленькие и пологие
+                      волны и не спеша, не прилагая особых усилий ехать по ним.
+                    </div>
+
+                    <ul class="slide__info info__list">
+                      <li class="info__item info">
+                        <div class="info__title">Длина доски</div>
+                        <div class="info__text">от 2,5 метров</div>
+                      </li>
+                      <li class="info__item">
+                        <div class="info__title">Ширина доски</div>
+                        <div class="info__text">от 40 сантиметров</div>
+                      </li>
+                    </ul>
+                    <div class="slide__bottom">
+                      <div class="slide__price">7000 Р</div>
+                      <button class="slide__button btn">Заказать</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="slider__item slide">
+                  <div class="slide__img-wrap">
+                    <img
+                      src="./images/board-1.png"
+                      alt="Логбоард 2.0"
+                      class="slide_img"
+                    />
+                  </div>
+                  <div class="slide__content">
+                    <div class="slide__params">
+                      <div class="slide__params_img-wrap">
+                        <svg class="slide__params_img">
+                          <use
+                            xlink:href="./images/icons/sprite.svg#kompas"
+                          ></use>
+                        </svg>
+                      </div>
+                      <div class="slide__params_text">Параметры</div>
+                    </div>
+                    <div class="slide__title-wrap">
+                      <h2 class="slide__title title title--small">
+                        Лонгбоард 2.1
+                      </h2>
+                    </div>
+                    <div class="slide__desc">
+                      Устойчивая доска для новичков. На них легко лежать,
+                      сидеть, грести, разгребаться на волны и ехать. Размер и
+                      плавучесть доски позволяет брать очень маленькие и пологие
+                      волны и не спеша, не прилагая особых усилий ехать по ним.
+                    </div>
+
+                    <ul class="slide__info info__list">
+                      <li class="info__item info">
+                        <div class="info__title">Длина доски</div>
+                        <div class="info__text">от 2,5 метров</div>
+                      </li>
+                      <li class="info__item">
+                        <div class="info__title">Ширина доски</div>
+                        <div class="info__text">от 40 сантиметров</div>
+                      </li>
+                    </ul>
+                    <div class="slide__bottom">
+                      <div class="slide__price">7000 Р</div>
+                      <button class="slide__button btn">Заказать</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="slider__arrow slider__arrow--right">
+              <svg class="slider__arrow--icon">
+                <use xlink:href="./images/icons/sprite.svg#arrow"></use>
+              </svg>
+            </div>
           </div>
         </section>
 
@@ -390,5 +509,34 @@
         </li>
       </ul>
     </nav>
+    <div class="overlay">
+      <div class="overlay__close">X</div>
+      <nav class="overlay__nav">
+        <ul class="overlay-menu">
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">О нас</a>
+          </li>
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">Серфборды</a>
+          </li>
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">Команда</a>
+          </li>
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">Меню</a>
+          </li>
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">Отзывы</a>
+          </li>
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">Как работаем</a>
+          </li>
+          <li class="overlay-menu__item">
+            <a href="" class="overlay-menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </body>
+  <script src="./js/burger-menu.js"></script>
 </html>

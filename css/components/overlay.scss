@@ -1,0 +1,63 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #313131;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &__close {
+    font-weight: bold;
+    font-size: 30px;
+    color: wheat;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+
+    @include phones {
+      top: 2%;
+      right: 6%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__nav {
+    height: 100%;
+    width: 100%;
+  }
+
+  &-menu {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      margin-bottom: 12px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link {
+      font-size: 36px;
+      line-height: 72px;
+      display: block;
+      color: #fff;
+    }
+  }
+}
+
+.disable-scroll {
+  overflow: hidden;
+}
