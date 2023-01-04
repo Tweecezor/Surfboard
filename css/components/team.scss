@@ -1,0 +1,131 @@
+.team {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--desktop {
+      @include tablets {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+      @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(24px);
+
+    @include tablets {
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__title {
+    &-wrap {
+      margin-bottom: rem(53px);
+      text-align: center;
+    }
+  }
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: rem(220px);
+
+  &__body {
+    text-align: center;
+    padding: rem(0px) rem(5px);
+
+    @include tablets {
+      padding: 0;
+    }
+  }
+
+  &__header {
+    width: 100%;
+    margin-bottom: rem(8px);
+    text-align: center;
+
+    @include tablets {
+      margin-bottom: rem(15px);
+    }
+  }
+
+  &__title {
+    color: $black;
+    font-weight: 700;
+    font-size: rem(21px);
+    position: relative;
+
+    &::after {
+      transition: 0.3s;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      content: "";
+      width: rem(9px);
+      height: rem(9px);
+      background: url("../../images/icons/triangle.svg") center center no-repeat;
+    }
+
+    &--active {
+      &::after {
+        // rotate: 60deg;
+        transform: translateY(-50%) rotate(60deg);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &-wrap {
+      margin-bottom: rem(8px);
+
+      @include tablets {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__info {
+    text-align: center;
+  }
+
+  &__accordion {
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__desc {
+    color: $grey;
+  }
+
+  &__job {
+    @include tablets {
+      font-weight: 700;
+    }
+  }
+
+  &__img {
+    &-wrap {
+      margin-bottom: rem(20px);
+
+      @include tablets {
+        margin-bottom: rem(15px);
+      }
+    }
+  }
+}

@@ -9,7 +9,14 @@
   &__list {
     display: flex;
 
-    margin-bottom: rem(15px);
+    position: relative;
+
+    &-wrap {
+      background: #f8faf9;
+      padding: rem(42px);
+      min-height: 280px;
+      margin-bottom: rem(15px);
+    }
   }
 
   &__authors {
@@ -19,10 +26,23 @@
 }
 
 .review {
-  background: #f8faf9;
-  padding: rem(42px);
   display: flex;
   width: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+
+  &__active {
+    position: static;
+    pointer-events: unset;
+    opacity: 1;
+    transition: 0.3s;
+  }
 
   @include tablets {
     flex-direction: column;
@@ -94,5 +114,10 @@
 
   &--active {
     border: rem(6px) solid $yellow;
+  }
+
+  &:hover {
+    border: rem(6px) solid $yellow;
+    cursor: pointer;
   }
 }

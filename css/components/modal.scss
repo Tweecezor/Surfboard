@@ -1,0 +1,56 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #313131;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__window {
+    padding: rem(30px) rem(20px);
+    background: #fff;
+    width: rem(309px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__content {
+    margin-bottom: rem(18px);
+    text-align: center;
+  }
+
+  &__close {
+    font-weight: bold;
+    font-size: rem(30px);
+
+    position: absolute;
+    top: 3%;
+    right: 3%;
+
+    @include phones {
+      top: 2%;
+      right: 6%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -49,11 +49,15 @@
 
   &__list {
     display: flex;
+    position: relative;
+    transition: 0.3s;
+    right: 0;
 
     &-wrap {
       width: rem(700px);
       overflow: hidden;
       display: flex;
+      transition: 0.3s;
 
       @include tablets {
         width: rem(520px);
