@@ -1,0 +1,40 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//
+
+//colors
+$black: #292929;
+$grey: #666666;
+$yellow: #fedb3f;
+$yellow_hover: #ffd517;
+
+//media query
+$tablets: 768px;
+$phones: 480px;
+@import "css/media.scss";
+
+//normalize
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
+//fonts
+@import "https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,500;1,700&display=swap";
+
+//layout
+
+@import "css/layout.scss";
+@import "css/base.scss";
+
+//components
+@import "css/components/welcome.scss";
+@import "css/components/advantages.scss";
+@import "css/components/reviews.scss";
+@import "css/components/delivery.scss";
+@import "css/components/fixed-menu.scss";
+@import "css/components/contacts.scss";
+@import "css/components/overlay.scss";
+@import "css/components/slider.scss";
+@import "css/components/team.scss";
+@import "css/components/modal.scss";
+@import "css/components/menu.scss";
+@import "css/components/player.scss";
