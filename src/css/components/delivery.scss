@@ -1,5 +1,5 @@
 .delivery {
-  background: url("../../images/form-bg.png") center center no-repeat;
+  background: url("images/form-bg.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -147,6 +147,6 @@
 .form__radio-checkbox .radio__visible {
   border-radius: 0;
   &:before {
-    background: url("../../images/icons/tick.svg") center center no-repeat;
+    background: url("images/icons/tick.svg") center center no-repeat;
   }
 }
